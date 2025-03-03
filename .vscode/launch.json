@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+            {
+                "name": "Debug Tetris (LLDB)",
+                "type": "cppdbg",
+                "request": "launch",
+    
+                // Path to the compiled executable.
+                "program": "${workspaceFolder}/tetrismain",
+    
+                // Pass any command-line arguments here (leave empty if none).
+                "args": [],
+    
+                // The current working directory when the program runs.
+                "cwd": "${workspaceFolder}",
+    
+                // Environment variables (leave as empty array if none).
+                "environment": [],
+    
+                // If true, a separate terminal window is not used (all output in VS Code debug console).
+                "externalConsole": false,
+    
+                // LLDB is the default debugger on macOS.
+                "MIMode": "lldb",
+    
+                // The pre-launch task that builds your code.
+                "preLaunchTask": "Build Tetris"
+            }
+        ]
+    }
+    
