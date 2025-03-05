@@ -2,11 +2,10 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
             "label": "Build Tetris",
-            "command": "clang++",
+            "type": "shell",
+            "command": "g++",
             "args": [
-                "-std=c++17",
                 "-g",
                 "${workspaceFolder}/tetrismain.cpp",
                 "-o",
