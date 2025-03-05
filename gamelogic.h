@@ -26,12 +26,12 @@ It contains methods to set up the board and manage its state.
 
 class Board
 {
-    vector<vector<int>> board; // Member variable to store the board
+    vector<vector<int> > board; // Member variable to store the board
 
     public:
     void boardSetup()
     {
-        board = vector<vector<int>>(20, vector<int>(10, 0)); // 20 rows, 10 columns, initialized to 0
+        board = vector<vector<int> >(20, vector<int>(10, 0)); // 20 rows, 10 columns, initialized to 0
     }
 
     void printBoard()
@@ -56,7 +56,7 @@ Method: Use a 2D vector of integers to represent each shape.
 
 class Tetromino
 {
-    vector<vector<int>> I =        // straight line of 4 blocks
+    vector<vector<int> > I =        // straight line of 4 blocks
     {
         {0, 0, 0, 0},
         {1, 1, 1, 1},
@@ -64,7 +64,7 @@ class Tetromino
         {0, 0, 0, 0}
     };
 
-    vector<vector<int>> O =        // square piece (2×2).
+    vector<vector<int> > O =        // square piece (2×2).
     {
         {0, 0, 0, 0},
         {0, 1, 1, 0},
@@ -72,7 +72,7 @@ class Tetromino
         {0, 0, 0, 0}
     };
 
-    vector<vector<int>> T =        // T-shaped piece (three blocks in a row plus one block centered).
+    vector<vector<int> > T =        // T-shaped piece (three blocks in a row plus one block centered).
     {
         {0, 1, 0, 0},
         {1, 1, 1, 0},
@@ -80,7 +80,7 @@ class Tetromino
         {0, 0, 0, 0}
     };
     
-    vector<vector<int>> S =        // The zig-zag piece, leans to the right at the top (when horizontal).
+    vector<vector<int> > S =        // The zig-zag piece, leans to the right at the top (when horizontal).
     {
         {0, 0, 1, 0},
         {0, 1, 1, 0},
@@ -88,7 +88,7 @@ class Tetromino
         {0, 0, 0, 0}
     };
 
-    vector<vector<int>> Z =        // The zig-zag piece, leans to the left at the top (when horizontal).
+    vector<vector<int> > Z =        // The zig-zag piece, leans to the left at the top (when horizontal).
     {
         {0, 1, 0, 0},
         {0, 1, 1, 0},
@@ -96,7 +96,7 @@ class Tetromino
         {0, 0, 0, 0}
     };
 
-    vector<vector<int>> J =        // backwards L shaped piece.
+    vector<vector<int> > J =        // backwards L shaped piece.
     {
         {0, 0, 1, 0},
         {0, 0, 1, 0},
@@ -104,7 +104,7 @@ class Tetromino
         {0, 0, 0, 0}
     };
 
-    vector<vector<int>> L =        // L shaped piece
+    vector<vector<int> > L =        // L shaped piece
 
     {
         {0, 1, 0, 0},
